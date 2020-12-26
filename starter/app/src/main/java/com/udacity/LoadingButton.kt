@@ -48,7 +48,7 @@ class LoadingButton @JvmOverloads constructor(
                         progressIndicator = animatedValue as Int
                         invalidate()
                     }
-                    duration = 10000
+                    duration = 30000
                     doOnStart {
                         currentText = loadingText
                         this@LoadingButton.isEnabled = false
@@ -107,7 +107,7 @@ class LoadingButton @JvmOverloads constructor(
             //circle progress
             val sweepAngle = progressIndicator / 1000f * 360f
             paint.color = loadingCircleColor
-            canvas.drawArc(progressArc, 0f, sweepAngle, true, paint);
+            canvas.drawArc(progressArc, 0f, sweepAngle, true, paint)
         }
         //text button
         paint.color = textColor

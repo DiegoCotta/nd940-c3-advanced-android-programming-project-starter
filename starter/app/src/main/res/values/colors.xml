@@ -5,5 +5,7 @@
     <color name="colorAccent">#F9A825</color>
     <color name="imageColor">#9E5EFF</color>
     <color name="white">#FFFFFF</color>
+    <color name="errorColor">#ff0000</color>
+    <color name="successCollor">#025A02</color>
 
 </resources>

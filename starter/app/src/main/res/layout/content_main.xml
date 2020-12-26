@@ -13,7 +13,8 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/image_height"
+        android:contentDescription="@string/cloud_image"
         android:background="@color/colorPrimaryDark"
         android:src="@drawable/ic_baseline_cloud_download_24"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,43 +24,43 @@
 
 
     <RadioGroup
-        android:id="@+id/radioGru"
+        android:id="@+id/radioGroup"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:padding="16dp"
+        android:padding="@dimen/default_margin"
         app:layout_constraintBottom_toTopOf="@id/custom_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioGlide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Glide - Image Loading Library by BumpTech" />
+            android:padding="@dimen/default_margin"
+            android:text="@string/glide_title" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioUdacity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="LoadApp - Current repository by Udacity" />
+            android:padding="@dimen/default_margin"
+            android:text="@string/udacity_title" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioRetrofit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Retrofit - Type-safe HTTP client for Android and Java by Square, Inc" />
+            android:padding="@dimen/default_margin"
+            android:text="@string/retrofit_title" />
     </RadioGroup>
 
     <com.udacity.LoadingButton
         android:id="@+id/custom_button"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_margin="20dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/default_margin"
         app:backgroundColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
